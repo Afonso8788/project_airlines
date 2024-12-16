@@ -30,7 +30,7 @@ from src.temporal_processing import (most_tweets_day,
 def main():
     logger = configurate_logs("logs/app.log")
     path = r'C:\Programming\CodePython\Moodles\Tweets.csv'
-    data = path_arquive_csv(path, use_pandas=True)
+    data = path_arquive_csv(path)
     if data is None or not isinstance(data, pd.DataFrame):
         register_error(logger, "Erro ao carregar os dados.")
         return
