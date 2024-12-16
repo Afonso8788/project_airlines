@@ -1,9 +1,12 @@
 def airlines_list(data):
-    return data['airline'].unique()
+    return list(set(row['airline'] for row in data))
 
 def company_most_negative_tweets(data):
-    negative = data[data['airline_sentiment'] == 'negative']
-    return negative['airline'].value_counts().idxmax()
+    counts ={}
+    for row in data:
+        if row['airline_sentiment'] == 'negative':
+            counts[row['airline']] = counts.get(row['airline'], 0) + 1
+    return max(counts, key=counts.get)
 
 def company_least_negative_tweets(data):
     negative = data[data['airline_sentiment'] == 'negative']
