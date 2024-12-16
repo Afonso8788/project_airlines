@@ -13,3 +13,7 @@ def configurate_logs(arquive_name="app.log"):
     logger = logging.getLogger()
     logger.info("Sistema de logs configurado.")
     return logger
+def register_event(logger, message):
+    logger.info(message)
+def register_error(logger, message):
+    logger.error(message)
