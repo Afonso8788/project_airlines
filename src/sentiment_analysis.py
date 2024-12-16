@@ -23,8 +23,11 @@ def company_most_neutral_tweets(data):
             counts[row['airline']] = counts.get(row['airline'], 0) + 1
     return max(counts, key=counts.get)
 def company_least_neutral_tweets(data):
-    neutral = data[data['airline_sentiment'] == 'neutral']
-    return neutral['airline'].value_counts().idxmin()
+    counts = {}
+    for row in data:
+        if row['airline_sentiment'] == 'negative':
+            counts[row['airline']] = counts.get(row['airline'], 0) + 1
+    return min(counts, key=counts.get)
 def number_retweets_per_sentiments(data):
     return data.groupby('airline_sentiment')['retweet_count'].max().to_dict()
 def media_retweets_per_sentiments(data):
