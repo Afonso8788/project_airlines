@@ -32,6 +32,13 @@ def company_least_neutral_tweets(data):
             counts[row['airline']] = counts.get(row['airline'], 0) + 1
     return min(counts, key=counts.get)
 def number_retweets_per_sentiments(data):
-    return data.groupby('airline_sentiment')['retweet_count'].max().to_dict()
+    counts = {}
+    for row in data:
+        sentiment = row['airline_sentiment']
+        retweets = int(row['retweet_count'])
+        counts[sentiment] = max(counts.get(sentiment, 0), retweets)
+    return counts
 def media_retweets_per_sentiments(data):
-    return data.groupby('airline_sentiment')['retweet_count'].mean().to_dict()
+    total = len(data)
+    counting = number_retweets_per_sentiments(data)
+    return {sentiment: (counting / total) * 100 for sentiment, counting in counting.items()}
