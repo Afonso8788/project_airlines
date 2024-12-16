@@ -1,4 +1,3 @@
-import pandas as pd
 from src.data_reading import path_arquive_csv
 from src.sentiment_analysis import (
     count_tweets_per_sentiment,
@@ -31,7 +30,7 @@ def main():
     logger = configurate_logs("logs/app.log")
     path = r'C:\Programming\CodePython\Moodles\Tweets.csv'
     data = path_arquive_csv(path)
-    if data is None or not isinstance(data, pd.DataFrame):
+    if data is None:
         register_error(logger, "Erro ao carregar os dados.")
         return
     register_event(logger, "Dados carregados com sucesso.")
