@@ -11,8 +11,11 @@ def company_most_positive_tweets(data):
             counts[row['airline']] = counts.get(row['airline'], 0) + 1
     return max(counts, key=counts.get)
 def company_least_positive_tweets(data):
-    positive = data[data['airline_sentiment'] == 'positive']
-    return positive['airline'].value_counts().idxmin()
+    counts = {}
+    for row in data:
+        if row['airline_sentiment'] == 'positive':
+            counts[row['airline']] = counts.get(row['airline'], 0) + 1
+    return min(counts, key=counts.get)
 def company_most_neutral_tweets(data):
     neutral = data[data['airline_sentiment'] == 'neutral']
     return neutral['airline'].value_counts().idxmax()
