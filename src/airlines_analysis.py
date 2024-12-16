@@ -9,8 +9,11 @@ def company_most_negative_tweets(data):
     return max(counts, key=counts.get)
 
 def company_least_negative_tweets(data):
-    negative = data[data['airline_sentiment'] == 'negative']
-    return negative['airline'].value_counts().idxmin()
+    counts ={}
+    for row in data:
+        if row['airline_sentiment'] == 'negative':
+            counts[row['airline']] = counts.get(row['airline'], 0) + 1
+    return min(counts, key=counts.get)
 
 def total_companies(data):
     return data['airline'].value_counts().to_dict()
