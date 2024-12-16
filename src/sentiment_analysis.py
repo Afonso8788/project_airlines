@@ -1,5 +1,8 @@
 def count_tweets_per_sentiment(data):
-    return data['airline_sentiment'].value_counts().to_dict()
+    counts = {}
+    for row in data:
+        counts[row['airline_sentiment']] = counts.get(row['airline_sentiment'], 0) + 1
+    return counts
 def calculate_percentual_sentiments(data):
     total = len(data)
     counting = count_tweets_per_sentiment(data)
