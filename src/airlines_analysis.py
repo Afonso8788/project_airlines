@@ -16,7 +16,9 @@ def company_least_negative_tweets(data):
     return min(counts, key=counts.get)
 
 def total_companies(data):
-    return data['airline'].value_counts().to_dict()
-
+    counts = {}
+    for row in data:
+        counts[row['airline']] = counts.get(row['airline'],0)+1
+        return counts
 def tweets_per_company(dataframe, company):
     return dataframe[dataframe['airline'] == company]
