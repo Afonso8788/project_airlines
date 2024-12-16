@@ -5,8 +5,11 @@ def calculate_percentual_sentiments(data):
     counting = count_tweets_per_sentiment(data)
     return {sentiment: (counting / total) * 100 for sentiment, counting in counting.items()}
 def company_most_positive_tweets(data):
-    positive = data[data['airline_sentiment'] == 'positive']
-    return positive['airline'].value_counts().idxmax()
+    counts = {}
+    for row in data:
+        if row['airline_sentiment'] == 'positive':
+            counts[row['airline']] = counts.get(row['airline'], 0) + 1
+    return max(counts, key=counts.get)
 def company_least_positive_tweets(data):
     positive = data[data['airline_sentiment'] == 'positive']
     return positive['airline'].value_counts().idxmin()
