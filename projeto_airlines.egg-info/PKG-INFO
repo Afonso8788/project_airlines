@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: projeto_airlines
+Version: 0.1.0
+Summary: Análise de tweets sobre companhias aéreas dos EUA
+Author: Afonso8788
+Requires-Dist: pandas>=1.0.0
+Requires-Dist: openpyxl>=3.0.0

@@ -1,0 +1,12 @@
+setup.py
+project_airlines.egg-info/PKG-INFO
+project_airlines.egg-info/SOURCES.txt
+project_airlines.egg-info/dependency_links.txt
+project_airlines.egg-info/requires.txt
+project_airlines.egg-info/top_level.txt
+src/Sentiment_Analysis.py
+src/__init__.py
+src/data_reading.py
+src/logs.py
+src/sentiment_analysis.py
+src/tweet_analysis.py

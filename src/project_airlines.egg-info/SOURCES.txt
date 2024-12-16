@@ -1,0 +1,6 @@
+setup.py
+src/project_airlines.egg-info/PKG-INFO
+src/project_airlines.egg-info/SOURCES.txt
+src/project_airlines.egg-info/dependency_links.txt
+src/project_airlines.egg-info/requires.txt
+src/project_airlines.egg-info/top_level.txt

@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: project_airlines
+Version: 1.0.0
+Summary: Análise de tweets sobre companhias aéreas
+Home-page: https://github.com/ubi-datasciencelabs-students/IACD_Prog_20242025_Grupo9
+Author: Afonso Claro, Daniel Jimenez
+Author-email: afonso.p.claro@ubi.pt, daniel.jimenez@ubi.pt
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pandas>=1.0.0
+Requires-Dist: numpy>=1.20.0
+Requires-Dist: matplotlib>=3.0.0
+
+# Project_airlines
+
+AnÃ¡lise e visualizaÃ§Ã£o de tweets sobre companhias aÃ©reas.
+
+---
+
+## VisÃ£o Geral
+
+Este projeto permite analisar tweets relacionados a companhias aÃ©reas, fornecendo insights como:
+- Sentimentos mais frequentes (positivos, negativos, neutros).
+- Companhias com mais reclamaÃ§Ãµes ou elogios.
+- EstatÃ­sticas detalhadas, como retweets e razÃµes para reclamaÃ§Ãµes.
+
+---
+
+## InstalaÃ§Ã£o
+
+### PrÃ©-requisitos
+Certifique-se de ter o **Python 3.8+** instalado.
+
+Clone o repositÃ³rio:
+```bash
+git clone https://github.com/seu_usuario/project_airlines.git
+cd project_airlines
