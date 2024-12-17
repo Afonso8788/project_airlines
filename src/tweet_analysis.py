@@ -26,9 +26,15 @@ def sentiment_distribution_airline(data):
         counts[key] = counts.get(key, 0) + 1
         return counts
 def top_10_names(data):
-    return data['name'].value_counts()[:10].to_dict()
+    counts = {}
+    for row in data:
+        counts[row['name']] = counts.get(row['name'], 0) + 1
+    return dict(sorted(counts.items(), key=lambda x: -x[1])[:10])
 def top_10_region(data):
-    return data['user_timezone'].value_counts()[:10].to_dict()
+    counts = {}
+    for row in data:
+        counts[row['user_timezone']] = counts.get(row['user_timezone'], 0) + 1
+    return dict(sorted(counts.items(), key=lambda x: -x[1])[:10])
 def least_10_region(data):
     return data['user_timezone'].value_counts()[10:].to_dict()
 def calculate_top_10_region(data):
