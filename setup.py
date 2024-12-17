@@ -13,8 +13,6 @@ setup(
     packages=find_packages(where="src"),
     package_dir={'': 'src'},
     install_requires=[
-        'pandas>=1.0.0',
-        'numpy>=1.20.0',
         'matplotlib>=3.0.0'
     ],
     python_requires='>=3.8',
