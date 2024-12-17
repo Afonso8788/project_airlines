@@ -2,7 +2,7 @@ def most_tweets_day(data):
     counts = {}
     for row in data:
         date = row["tweet_created"].split('')[0]
-        counts[date] = counts.get (date,0) + 1
+        counts[date] = counts.get(date,0) + 1
         return max(counts,key= counts.get)
 def tweets_per_month(data , year , month):
     count = 0
