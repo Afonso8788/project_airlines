@@ -20,7 +20,11 @@ def tweet_statistics(data):
         'median_length' : sorted(lengths)[len(lengths) // 2]
     }
 def sentiment_distribution_airline(data):
-    return data.groupby('airline')['airline_sentiment'].value_counts(normalize=True).to_dict()
+    counts = {}
+    for row in data:
+        key = (row['airline'], row['airline_sentiment'])
+        counts[key] = counts.get(key, 0) + 1
+        return counts
 def top_10_names(data):
     return data['name'].value_counts()[:10].to_dict()
 def top_10_region(data):
