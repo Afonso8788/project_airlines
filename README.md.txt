@@ -43,15 +43,59 @@ Objetivo: Configura o sistema de logs.
 Uso:
 Recebe um caminho de arquivo (log_file) onde os logs serão gravados. O arquivo de log registra tanto eventos quanto erros.
 Exemplo de uso: configurate_logs("logs/app.log").
+
 register_event(logger, message)
 
 Objetivo: Registra um evento no arquivo de log.
 Uso:
 Recebe o objeto logger (gerado pela função configurate_logs) e uma mensagem (message) descrevendo o evento.
 Exemplo de uso: register_event(logger, "Dados carregados com sucesso.").
+
 register_error(logger, message)
 
 Objetivo: Registra um erro no arquivo de log.
 Uso:
 Recebe o objeto logger e uma mensagem (message) descrevendo o erro.
 Exemplo de uso: register_error(logger, "Erro ao carregar os dados.").
+
+airlines_list (data)
+Objetivo : Procura e coloca os diferentes nomes das diferentes companhias.
+Uso :
+Para o usuário saber das diferentes companhias disponiveis .
+Exemplo de uso : airlines_list(data) "Onde o data é arquivo onde queres verificar as companhias"
+
+company_most_negative_tweets (data)
+Objetivo : Procura e coloca a companhia com o numero total de tweets negativos.
+Uso :
+O usuário saber da companhia com o maior numero de críticas já recebidas .
+Exemplo de uso : company_most_negative_tweets (data) "Onde o data é arquivo onde queres verificar as companhias"
+
+company_least_negative_tweets (data)
+Objetivo : Procura e coloca a companhia com a menor quantidade de tweets negativos.
+Uso :
+O usuário saber da companhia com o menor numero de críticas já recebidas .
+Exemplo de uso : company_least_negative_tweets (data) "Onde o data é arquivo onde queres verificar as companhias"
+
+company_most_positive_tweets (data)
+Objetivo : Procura e coloca a companhia com o numero total de tweets positivos.
+Uso :
+O usuário saber da companhia com o maior numero de elogios já recebidos .
+Exemplo de uso : company_most_positive_tweets (data) "Onde o data é arquivo onde queres verificar as companhias"
+
+company_least_positive_tweets (data)
+Objetivo : Procura e coloca a companhia com a menor quantidade de tweets positivos.
+Uso :
+O usuário saber da companhia com o menor numero de elogios já recebidos .
+Exemplo de uso : company_least_positive_tweets (data) "Onde o data é arquivo onde queres verificar as companhias"
+
+company_most_neutral_tweets (data)
+Objetivo : Procura e coloca a companhia com o numero total de tweets neutros.
+Uso :
+O usuário saber da companhia com o maior numero de tweets neutros já recebidos .
+Exemplo de uso : company_most_neutral_tweets (data) "Onde o data é arquivo onde queres verificar as companhias"
+
+company_least_neutral_tweets (data)
+Objetivo : Procura e coloca a companhia com a menor quantidade de tweets neutros.
+Uso :
+O usuário saber da companhia com o menor numero de tweets neutros já recebidos .
+Exemplo de uso : company_least_neutral_tweets (data) "Onde o data é arquivo onde queres verificar as companhias"
