@@ -60,7 +60,7 @@ def main():
         {"Descrição": "Percentagem das 10 regiões mais frequentes", "função": calculate_top_10_region,
          "args": [data]},
         {"Descrição": "Percentagem das 10 regiões menos frequentes", "função": calculate_least_10_region,
-         "args": [data]},
+         "args": [data]}
     ]
 
     for step in steps:

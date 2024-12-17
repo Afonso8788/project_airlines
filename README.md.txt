@@ -29,7 +29,7 @@ Clone o repositório:
 git clone https://github.com/ubi-datasciencelabs-students/IACD_Prog_20242025_Grupo9
 cd (Um lugar do teu computador à tua escolha)
 
-## Explicações :
+## Explicações das funções :
 
 path_arquive_csv(path)
 
@@ -112,3 +112,87 @@ Objetivo : Procura e coloca o numero de tweets num mes e ano dependendo da escol
 Uso :
 O usuário ver quantos tweets foram dados num determinado mês e ano.
 Exemplo de uso : tweets_per_month(data , year , month) "Onde o data é arquivo onde queres verificar as companhias e o year e month são definidos pelo cliente "
+
+tweet_statistics(data)
+
+Objetivo : Colocar os diferentes dados estatisticos sobre os tweets.
+Uso :
+O usuário saber sobre as estatisticas como o maior e menor comprimentos , média , mediana e total .
+Exemplo de uso : tweet_statistics(data) "Onde o data é arquivo onde queres verificar as companhias"
+
+sentiment_distribution_airline (data)
+
+Objetivo : Avaliar os sentimentos por companhia.
+Uso :
+O usuario saber sobre a avaliação de outros usuarios sobre os sentimentos por companhia.
+Exemplo de uso : sentiment_distribution_airline(data) "Onde o data é arquivo onde queres verificar as companhias"
+
+count_tweets_per_sentiment(data)
+
+Objetivo : Avaliar os sentimentos.
+Uso :
+O usuario saber sobre a avaliação de outros usuarios sobre os sentimentos.
+Exemplo de uso : count_tweets_per_sentiment(data) "Onde o data é arquivo onde queres verificar as companhias"
+
+calculate_percentual_sentiments(data)
+
+Objetivo : Avaliar os sentimentos por pecentagens.
+Uso :
+O usuario saber através do count_tweets_per_sentiment sobre a percentagem da avaliação de outros usuarios sobre os sentimentos.
+Exemplo de uso : calculate_percentual_sentiments(data) "Onde o data é arquivo onde queres verificar as companhias"
+
+top_10_names(data)
+
+Objetivo : Buscar os 10 usuários com mais tweets.
+Uso :
+O usuario ver através quem o nome dos usuarios com mais tweets .
+Exemplo de uso : top_10_names(data) "Onde o data é arquivo onde queres verificar as companhias"
+
+top_10_region (data)
+
+Objetivo : Buscar as 10 regioes com mais tweets.
+Uso :
+O usuario saber quais são as regiões pelo mundo que mais comentam.
+Exemplo de uso : top_10_region(data) "Onde o data é arquivo onde queres verificar as companhias"
+
+least_10_region (data)
+
+Objetivo : Buscar as 10 regioes com menos tweets.
+Uso :
+O usuario saber quais são as regiões pelo mundo que menos comentam.
+Exemplo de uso : least_10_region(data) "Onde o data é arquivo onde queres verificar as companhias"
+
+calculate_top_10_region (data)
+
+Objetivo : Buscar as 10 regioes com mais percentagens de tweets .
+Uso :
+O usuario saber através do top_10_region quais são as regiões pelo mundo que mais comentam.
+Exemplo de uso : top_10_region(data) "Onde o data é arquivo onde queres verificar as companhias"
+
+calculate_least_10_region (data)
+
+Objetivo : Buscar as 10 regioes com menos percentagens de tweets.
+Uso :
+O usuario saber através do least_10_region quais são as regiões pelo mundo que menos comentam.
+Exemplo de uso : least_10_region(data) "Onde o data é arquivo onde queres verificar as companhias"
+
+negative_reasons(data)
+
+Objetivo : Buscar as criticas relativamente às companhias .
+Uso :
+O usuario saber sobre a maior parte das criticas dos populares relativamente às companhias.
+Exemplo de uso : negative_reasons(data) "Onde o data é arquivo onde queres verificar as companhias"
+
+number_retweets_per_sentiments(data)
+
+Objetivo : Buscar o numero de retweets por sentimento .
+Uso :
+O usuario saber sobre o numero de sentimentos relativamente aos retweets .
+Exemplo de uso : number_retweets_per_sentiments(data) "Onde o data é arquivo onde queres verificar as companhias"
+
+media_retweets_per_sentiments(data)
+
+Objetivo : Buscar a percentagem de retweets por sentimento .
+Uso :
+O usuario saber através do number_retweets_per_sentiments sobre a percentagem de sentimentos relativamente aos retweets .
+Exemplo de uso : media_retweets_per_sentiments(data) "Onde o data é arquivo onde queres verificar as companhias"
