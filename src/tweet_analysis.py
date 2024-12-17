@@ -2,14 +2,14 @@ def airlines_mentioned(data):
     counts = {}
     for row in data:
         counts[row['airline']] = counts.get(row['airline'],0) + 1
-        return counts
+    return counts
 def negative_reasons(data):
     counts = {}
     for row in data:
         reason = row['negativereason']
         if reason:
             counts [reason] = counts.get(reason,0) + 1
-        return counts
+    return counts
 def tweet_statistics(data):
     lengths = [len(row['text']) for row in data]
     return {
@@ -24,7 +24,7 @@ def sentiment_distribution_airline(data):
     for row in data:
         key = (row['airline'], row['airline_sentiment'])
         counts[key] = counts.get(key, 0) + 1
-        return counts
+    return counts
 def top_10_names(data):
     counts = {}
     for row in data:
