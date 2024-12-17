@@ -8,7 +8,6 @@ setup(
     author_email='afonso.p.claro@ubi.pt, daniel.jimenez@ubi.pt',
     description='Análise de tweets sobre companhias aéreas',
     long_description=open('README.md.txt').read(),
-    long_description_content_type='text/markdown',
     url='https://github.com/ubi-datasciencelabs-students/IACD_Prog_20242025_Grupo9',
     packages=find_packages(where="src"),
     package_dir={'': 'src'},
