@@ -1,7 +1,15 @@
 def airlines_mentioned(data):
-    return data['airline'].value_counts().to_dict()
+    counts = {}
+    for row in data:
+        counts[row['airline']] = counts.get(row['airline'],0) + 1
+        return counts
 def negative_reasons(data):
-    return data['negativereason'].value_counts().to_dict()
+    counts = {}
+    for row in data:
+        reason = row['negativereason']
+        if reason:
+            counts [reason] = counts.get(reason,0) + 1
+        return counts
 def tweet_statistics(data):
     tweet_lengths = data['text'].apply(len)
     return {
