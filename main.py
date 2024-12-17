@@ -72,6 +72,5 @@ def main():
         print(step["Descrição"] + ":")
         print(step["função"](*step["args"]))
     return steps
-
 if __name__ == "__main__":
     main()
