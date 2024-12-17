@@ -21,11 +21,9 @@ from src.tweet_analysis import (airlines_mentioned,
 from src.airlines_analysis import (company_most_negative_tweets,
     company_least_negative_tweets,
     airlines_list,
-    total_companies,
-    tweets_per_company)
+    total_companies)
 from src.temporal_processing import (most_tweets_day,
                                      tweets_per_month)
-
 def main():
     logger = configurate_logs("logs/app.log")
     path = r'C:\Programming\CodePython\Moodles\Tweets.csv'
@@ -40,7 +38,6 @@ def main():
         {"Descrição": "Empresa com menos tweets negativos", "função": company_least_negative_tweets,
          "args": [data]},
         {"Descrição": "Total de tweets por companhia", "função": total_companies, "args": [data]},
-        {"Descrição": "Tweets por companhia", "função": tweets_per_company, "args": [data, ""]},
         {"Descrição": "Contagem de tweets por sentimento", "função": count_tweets_per_sentiment, "args": [data]},
         {"Descrição": "Percentual de tweets por sentimento", "função": calculate_percentual_sentiments,
          "args": [data]},

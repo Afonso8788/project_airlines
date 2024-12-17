@@ -10,6 +10,11 @@ Este projeto permite analisar tweets relacionados a companhias aéreas, fornecen
 - Sentimentos mais frequentes (positivos, negativos, neutros).
 - Companhias com mais reclamações ou elogios.
 - Estatísticas detalhadas, como retweets e razões para reclamações.
+- Uma lista das companhias aéreas.
+- Empresa com mais e menos tweets negativos,positivos e neutros.
+- O numero total de tweets por companhia.
+-
+
 
 ---
 

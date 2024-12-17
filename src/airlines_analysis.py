@@ -20,5 +20,3 @@ def total_companies(data):
     for row in data:
         counts[row['airline']] = counts.get(row['airline'],0)+1
     return counts
-def tweets_per_company(data, company):
-    return [row for row in data if row['airline'] == company]
