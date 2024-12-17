@@ -1,0 +1,13 @@
+setup.py
+src/__init__.py
+src/airlines_analysis.py
+src/data_reading.py
+src/logs.py
+src/sentiment_analysis.py
+src/temporal_processing.py
+src/tweet_analysis.py
+tweet_analysis.egg-info/PKG-INFO
+tweet_analysis.egg-info/SOURCES.txt
+tweet_analysis.egg-info/dependency_links.txt
+tweet_analysis.egg-info/requires.txt
+tweet_analysis.egg-info/top_level.txt
