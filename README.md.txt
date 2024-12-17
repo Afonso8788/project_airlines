@@ -21,9 +21,6 @@ Este projeto permite analisar tweets relacionados a companhias aéreas, fornecen
 
 ## Instalação
 
-### Pré-requisitos
-Certifique-se de ter pelo menos o **Python 3.8+** instalado.
-
 Clone o repositório:
 ```bash
 git clone https://github.com/ubi-datasciencelabs-students/IACD_Prog_20242025_Grupo9
