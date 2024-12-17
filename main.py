@@ -46,10 +46,10 @@ def main():
     # Total de companhias e seus tweets
     print("Total de tweets por companhia:")
     print(total_companies(data))
-    # Número de tweets de uma companhia específica
-    company = "United"
-    print(f"Número de tweets da companhia {company}:")
-    print(tweets_per_company(data, company))
+    # Tweets por companhia
+    company = ""
+    print(f"Tweets por companhia :")
+    print(tweets_per_company(data,company))
     # Contagem de tweets por sentimento
     print("Contagem de tweets por sentimento:")
     print(count_tweets_per_sentiment(data))
