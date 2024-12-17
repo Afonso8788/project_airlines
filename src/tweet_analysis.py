@@ -1,8 +1,3 @@
-def airlines_mentioned(data):
-    counts = {}
-    for row in data:
-        counts[row['airline']] = counts.get(row['airline'],0) + 1
-    return counts
 def negative_reasons(data):
     counts = {}
     for row in data:

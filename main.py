@@ -9,8 +9,7 @@ from src.sentiment_analysis import (
     company_most_neutral_tweets,
     company_least_neutral_tweets)
 from src.logs import configurate_logs, register_event, register_error
-from src.tweet_analysis import (airlines_mentioned,
-                                negative_reasons,
+from src.tweet_analysis import (negative_reasons,
                                 tweet_statistics,
                                 sentiment_distribution_airline,
                                 top_10_names,
@@ -51,7 +50,6 @@ def main():
         {"Descrição": "Média de retweets por sentimento", "função": media_retweets_per_sentiments, "args": [data]},
         {"Descrição": "Dia com mais tweets", "função": most_tweets_day, "args": [data]},
         {"Descrição": "Número de tweets em um mês específico", "função": tweets_per_month, "args": [data, 2015, 2]},
-        {"Descrição": "Companhias mencionadas", "função": airlines_mentioned, "args": [data]},
         {"Descrição": "Razões negativas dos tweets", "função": negative_reasons, "args": [data]},
         {"Descrição": "Estatísticas dos tweets", "função": tweet_statistics, "args": [data]},
         {"Descrição": "Distribuição de sentimentos por companhia", "função": sentiment_distribution_airline,

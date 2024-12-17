@@ -99,3 +99,16 @@ Objetivo : Procura e coloca a companhia com a menor quantidade de tweets neutros
 Uso :
 O usuário saber da companhia com o menor numero de tweets neutros já recebidos .
 Exemplo de uso : company_least_neutral_tweets (data) "Onde o data é arquivo onde queres verificar as companhias"
+
+most_tweets_day(data)
+Objetivo : Procura e coloca o dia com maior numero de tweets.
+Uso :
+O usuário saber qual é o maior numero de tweets num dia.
+Exemplo de uso : most_tweets_day(data) "Onde o data é arquivo onde queres verificar as companhias"
+
+tweets_per_month(data , year , month)
+
+Objetivo : Procura e coloca o numero de tweets num mes e ano dependendo da escolha do usuario.
+Uso :
+O usuário ver quantos tweets foram dados num determinado mês e ano.
+Exemplo de uso : tweets_per_month(data , year , month) "Onde o data é arquivo onde queres verificar as companhias e o year e month são definidos pelo cliente "
