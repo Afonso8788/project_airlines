@@ -11,13 +11,13 @@ def negative_reasons(data):
             counts [reason] = counts.get(reason,0) + 1
         return counts
 def tweet_statistics(data):
-    tweet_lengths = data['text'].apply(len)
+    lengths = [len(row['text']) for row in data]
     return {
-        'min_length': tweet_lengths.min(),
-        'max_length': tweet_lengths.max(),
-        'average_length': tweet_lengths.mean(),
-        'total_length' : tweet_lengths.sum(),
-        'median_length' : tweet_lengths.median()
+        'min_length': max(lengths),
+        'max_length': min(lengths),
+        'average_length': sum(lengths)/len(lengths),
+        'total_length' : sum(lengths),
+        'median_length' : sorted(lengths)[len(lengths) // 2]
     }
 def sentiment_distribution_airline(data):
     return data.groupby('airline')['airline_sentiment'].value_counts(normalize=True).to_dict()
