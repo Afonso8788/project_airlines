@@ -36,7 +36,10 @@ def top_10_region(data):
         counts[row['user_timezone']] = counts.get(row['user_timezone'], 0) + 1
     return dict(sorted(counts.items(), key=lambda x: -x[1])[:10])
 def least_10_region(data):
-    return data['user_timezone'].value_counts()[10:].to_dict()
+    counts = {}
+    for row in data:
+        counts[row['user_timezone']] = counts.get(row['user_timezone'], 0) + 1
+    return dict(sorted(counts.items(), key=lambda x: x[1])[:10])
 def calculate_top_10_region(data):
     total = len(data)
     counting = top_10_region(data)
