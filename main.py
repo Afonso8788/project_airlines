@@ -99,14 +99,14 @@ def main():
     # Top 10 regiões com mais tweets
     print("Top 10 regiões com mais tweets:")
     print(top_10_region(data))
-    # Regiões menos frequentes (exceto top 10)
-    print("Regiões menos frequentes (exceto top 10):")
+    # Top 10 regiões com menos tweets
+    print("Top 10 regiões com menos tweets")
     print(least_10_region(data))
     # Percentagem das 10 regiões mais frequentes
     print("Percentagem das 10 regiões mais frequentes:")
     print(calculate_top_10_region(data))
-    # Percentagem das regiões menos frequentes (exceto top 10)
-    print("Percentagem das regiões menos frequentes (exceto top 10):")
+    # Percentagem das 10 regiões menos frequentes
+    print("Percentagem das 10 regiões menos frequentes")
     print(calculate_least_10_region(data))
 
 if __name__ == "__main__":
