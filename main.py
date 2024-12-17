@@ -1,5 +1,16 @@
 from src.data_reading import path_arquive_csv
-from src.sentiment_analysis import (
+from src.airline_analysis import (company_most_negative_tweets,
+    company_least_negative_tweets,
+    airlines_list,
+    total_companies,
+    negative_reasons,
+    tweet_statistics,
+    sentiment_distribution_airline,
+    top_10_names,
+    top_10_region,
+    least_10_region,
+    calculate_top_10_region,
+    calculate_least_10_region,
     count_tweets_per_sentiment,
     calculate_percentual_sentiments,
     company_most_positive_tweets,
@@ -7,22 +18,13 @@ from src.sentiment_analysis import (
     company_least_positive_tweets,
     number_retweets_per_sentiments,
     company_most_neutral_tweets,
-    company_least_neutral_tweets)
-from src.logs import configurate_logs, register_event, register_error
-from src.tweet_analysis import (negative_reasons,
-                                tweet_statistics,
-                                sentiment_distribution_airline,
-                                top_10_names,
-                                top_10_region,
-                                least_10_region,
-                                calculate_top_10_region,
-                                calculate_least_10_region)
-from src.airlines_analysis import (company_most_negative_tweets,
-    company_least_negative_tweets,
-    airlines_list,
-    total_companies)
-from src.temporal_processing import (most_tweets_day,
-                                     tweets_per_month)
+    company_least_neutral_tweets,
+    configurate_logs,
+    register_event,
+    register_error,
+    most_tweets_day,
+    tweets_per_month)
+
 def main():
     logger = configurate_logs("logs/app.log")
     path = r'C:\Programming\CodePython\Moodles\Tweets.csv'

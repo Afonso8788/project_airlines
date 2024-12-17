@@ -1,6 +1,0 @@
-setup.py
-airlines/airlines_analysis.egg-info/PKG-INFO
-airlines/airlines_analysis.egg-info/SOURCES.txt
-airlines/airlines_analysis.egg-info/dependency_links.txt
-airlines/airlines_analysis.egg-info/requires.txt
-airlines/airlines_analysis.egg-info/top_level.txt
