@@ -34,80 +34,43 @@ def main():
         register_error(logger, "Erro ao carregar os dados.")
         return
     register_event(logger, "Dados carregados com sucesso.")
-    # Listar companhias aéreas
-    print("Companhias aéreas disponíveis:")
-    print(airlines_list(data))
-    # Empresa com mais tweets negativos
-    print("Empresa com mais tweets negativos:")
-    print(company_most_negative_tweets(data))
-    # Empresa com menos tweets negativos
-    print("Empresa com menos tweets negativos:")
-    print(company_least_negative_tweets(data))
-    # Total de companhias e seus tweets
-    print("Total de tweets por companhia:")
-    print(total_companies(data))
-    # Tweets por companhia
-    company = ""
-    print(f"Tweets por companhia :")
-    print(tweets_per_company(data,company))
-    # Contagem de tweets por sentimento
-    print("Contagem de tweets por sentimento:")
-    print(count_tweets_per_sentiment(data))
-    # Percentagem de sentimentos
-    print("Percentual de tweets por sentimento:")
-    print(calculate_percentual_sentiments(data))
-    # Empresa com mais tweets positivos
-    print("Empresa com mais tweets positivos:")
-    print(company_most_positive_tweets(data))
-    # Empresa com menos tweets positivos
-    print("Empresa com menos tweets positivos:")
-    print(company_least_positive_tweets(data))
-    # Empresa com mais tweets neutros
-    print("Empresa com mais tweets neutros:")
-    print(company_most_neutral_tweets(data))
-    # Empresa com menos tweets neutros
-    print("Empresa com menos tweets neutros:")
-    print(company_least_neutral_tweets(data))
-    # Número de retweets por sentimento
-    print("Número de retweets por sentimento:")
-    print(number_retweets_per_sentiments(data))
-    # Média de retweets por sentimento
-    print("Média de retweets por sentimento:")
-    print(media_retweets_per_sentiments(data))
-    # Dia com mais tweets
-    print("Dia com mais tweets:")
-    print(most_tweets_day(data))
-    # Número de tweets em um mês específico
-    year, month = 2015, 2
-    print(f"Número de tweets em {month}/{year}:")
-    print(tweets_per_month(data, year, month))
-    # Companhias mencionadas
-    print("Companhias mencionadas:")
-    print(airlines_mentioned(data))
-    # Razões negativas dos tweets
-    print("Razões negativas dos tweets:")
-    print(negative_reasons(data))
-    # Estatísticas dos tweets
-    print("Estatísticas dos tweets:")
-    print(tweet_statistics(data))
-    # Distribuição de sentimentos por companhia
-    print("Distribuição de sentimentos por companhia:")
-    print(sentiment_distribution_airline(data))
-    # Top 10 nomes mais frequentes
-    print("Top 10 nomes mais frequentes:")
-    print(top_10_names(data))
-    # Top 10 regiões com mais tweets
-    print("Top 10 regiões com mais tweets:")
-    print(top_10_region(data))
-    # Top 10 regiões com menos tweets
-    print("Top 10 regiões com menos tweets")
-    print(least_10_region(data))
-    # Percentagem das 10 regiões mais frequentes
-    print("Percentagem das 10 regiões mais frequentes:")
-    print(calculate_top_10_region(data))
-    # Percentagem das 10 regiões menos frequentes
-    print("Percentagem das 10 regiões menos frequentes")
-    print(calculate_least_10_region(data))
+    steps = [
+        {"Descrição": "Listar companhias aéreas", "função": airlines_list, "args": [data]},
+        {"Descrição": "Empresa com mais tweets negativos", "função": company_most_negative_tweets, "args": [data]},
+        {"Descrição": "Empresa com menos tweets negativos", "função": company_least_negative_tweets,
+         "args": [data]},
+        {"Descrição": "Total de tweets por companhia", "função": total_companies, "args": [data]},
+        {"Descrição": "Tweets por companhia", "função": tweets_per_company, "args": [data, ""]},
+        {"Descrição": "Contagem de tweets por sentimento", "função": count_tweets_per_sentiment, "args": [data]},
+        {"Descrição": "Percentual de tweets por sentimento", "função": calculate_percentual_sentiments,
+         "args": [data]},
+        {"Descrição": "Empresa com mais tweets positivos", "função": company_most_positive_tweets, "args": [data]},
+        {"Descrição": "Empresa com menos tweets positivos", "função": company_least_positive_tweets,
+         "args": [data]},
+        {"Descrição": "Empresa com mais tweets neutros", "função": company_most_neutral_tweets, "args": [data]},
+        {"Descrição": "Empresa com menos tweets neutros", "função": company_least_neutral_tweets, "args": [data]},
+        {"Descrição": "Número de retweets por sentimento", "função": number_retweets_per_sentiments,
+         "args": [data]},
+        {"Descrição": "Média de retweets por sentimento", "função": media_retweets_per_sentiments, "args": [data]},
+        {"Descrição": "Dia com mais tweets", "função": most_tweets_day, "args": [data]},
+        {"Descrição": "Número de tweets em um mês específico", "função": tweets_per_month, "args": [data, 2015, 2]},
+        {"Descrição": "Companhias mencionadas", "função": airlines_mentioned, "args": [data]},
+        {"Descrição": "Razões negativas dos tweets", "função": negative_reasons, "args": [data]},
+        {"Descrição": "Estatísticas dos tweets", "função": tweet_statistics, "args": [data]},
+        {"Descrição": "Distribuição de sentimentos por companhia", "função": sentiment_distribution_airline,
+         "args": [data]},
+        {"Descrição": "Top 10 nomes mais frequentes", "função": top_10_names, "args": [data]},
+        {"Descrição": "Top 10 regiões com mais tweets", "função": top_10_region, "args": [data]},
+        {"Descrição": "Top 10 regiões com menos tweets", "função": least_10_region, "args": [data]},
+        {"Descrição": "Percentagem das 10 regiões mais frequentes", "função": calculate_top_10_region,
+         "args": [data]},
+        {"Descrição": "Percentagem das 10 regiões menos frequentes", "função": calculate_least_10_region,
+         "args": [data]},
+    ]
 
+    for step in steps:
+        print(step["Descrição"] + ":")
+        print(step["função"](*step["args"]))
+    return steps
 if __name__ == "__main__":
     main()
