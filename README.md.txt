@@ -4,6 +4,12 @@ Análise e visualização de tweets sobre companhias aéreas.
 
 ---
 
+## Teste
+
+Tem uma função neste ficheiro com o objetivo de testar as funções de acordo com a opção do utilizador.
+
+---
+
 ## Visão Geral
 
 Este projeto permite analisar tweets relacionados a companhias aéreas, fornecendo insights como:

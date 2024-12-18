@@ -26,6 +26,10 @@ from src.airline_analysis import (company_most_negative_tweets,
     most_tweets_day,
     tweets_per_month)
 
+### Função principal
+
+
+
 def main():
     logger = configurate_logs("logs/app.log")
     path = r'C:\Programming\CodePython\Moodles\Tweets.csv'

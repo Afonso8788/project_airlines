@@ -1,4 +1,4 @@
-
+### Análise de Sentimento
 
 
 
@@ -82,6 +82,10 @@ def tweet_statistics(data):
         'median_length' : sorted(lengths)[len(lengths) // 2]
     }
 
+### Análise de Companhias Aéreas
+
+
+
 #Distribuir sentimentos por companhia
 def sentiment_distribution_airline(data):
     counts = {}
@@ -147,6 +151,11 @@ def total_companies(data):
     for row in data:
         counts [row['airline']] = counts.get(row['airline'],0)+1
     return counts
+
+
+### Processamento Temporal
+
+
 
 #Identificar o dia com mais tweets
 def most_tweets_day(data):

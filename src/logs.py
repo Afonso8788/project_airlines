@@ -1,7 +1,7 @@
 import logging
 import os
 
-#Configuração de logs
+### Configuração de Exceções e Logs
 def configurate_logs(arquive_name="app.log"):
     directory_logs = os.path.dirname(arquive_name)
     if directory_logs and not os.path.exists(directory_logs):
