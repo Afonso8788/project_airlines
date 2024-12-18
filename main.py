@@ -1,4 +1,7 @@
-from src.data_reading import path_arquive_csv
+from src.data_reading import (path_arquive_csv,
+                              configurate_logs,
+                              register_event,
+                              register_error)
 from src.airline_analysis import (company_most_negative_tweets,
     company_least_negative_tweets,
     airlines_list,
@@ -19,9 +22,6 @@ from src.airline_analysis import (company_most_negative_tweets,
     number_retweets_per_sentiments,
     company_most_neutral_tweets,
     company_least_neutral_tweets,
-    configurate_logs,
-    register_event,
-    register_error,
     most_tweets_day,
     tweets_per_month)
 
@@ -64,7 +64,6 @@ def main():
         {"Descrição": "Percentagem das 10 regiões menos frequentes", "função": calculate_least_10_region,
          "args": [data]}
     ]
-
     for step in steps:
         print(step["Descrição"] + ":")
         print(step["função"](*step["args"]))
