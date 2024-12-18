@@ -1,6 +1,5 @@
 import csv
-import logging
-import os
+
 
 def path_arquive_csv(path_arquive):
         with open(path_arquive, mode='r', encoding='utf-8') as file:
