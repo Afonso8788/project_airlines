@@ -1,3 +1,7 @@
+
+
+
+
 #Identificar o número de tweets por sentimento
 def count_tweets_per_sentiment(data):
     counts = {}
