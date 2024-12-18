@@ -69,7 +69,7 @@ def main():
     assert company_most_negative_tweets (data) == "United"
     assert company_least_negative_tweets(data) == "Virgin America"
     assert company_most_neutral_tweets(data) == "Delta"
-    assert company_least_negative_tweets(data) == "Virgin America"
+    assert company_least_neutral_tweets(data) == "Virgin America"
     assert company_most_positive_tweets(data) == "Southwest"
     assert company_least_positive_tweets(data) == "Virgin America"
     for step in steps:
@@ -80,5 +80,7 @@ def main():
 try:
     if __name__ == "__main__":
         main()
-except NameError:
-    print ("O Codigo não pode ser executado porque a variável não foi definida.")
+except FileNotFoundError as e:
+        print("Erro: Arquivo não encontrado:", e)
+except Exception as e:
+    print("Erro inesperado:", e)
