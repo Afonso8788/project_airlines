@@ -1,6 +1,7 @@
 import logging
 import os
 
+#Configuração de logs
 def configurate_logs(arquive_name="app.log"):
     directory_logs = os.path.dirname(arquive_name)
     if directory_logs and not os.path.exists(directory_logs):
@@ -14,7 +15,11 @@ def configurate_logs(arquive_name="app.log"):
     logger = logging.getLogger()
     logger.info("Sistema de logs configurado.")
     return logger
+
+#Registrar um evento
 def register_event(logger, message):
     logger.info(message)
+
+#Registrar um erro
 def register_error(logger, message):
     logger.error(message)
