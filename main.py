@@ -1,7 +1,8 @@
-from src.data_reading import (path_arquive_csv,
-                              configurate_logs,
-                              register_event,
-                              register_error)
+from src.data_reading import (path_arquive_csv)
+from src.logs import (configurate_logs,
+                      register_event,
+                      register_error)
+
 from src.airline_analysis import (company_most_negative_tweets,
     company_least_negative_tweets,
     airlines_list,
