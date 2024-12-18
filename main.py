@@ -68,5 +68,8 @@ def main():
         print(step["Descrição"] + ":")
         print(step["função"](*step["args"]))
     return steps
-if __name__ == "__main__":
-    main()
+try:
+    if __name__ == "__main__":
+        main()
+except NameError:
+    print ("O Codigo não pode ser executado porque a variável não foi definida.")

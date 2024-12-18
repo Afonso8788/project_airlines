@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f1bc6df-8040-4d19-9929-a5491d0685f4" name="Changes" comment="Commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,30 +47,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests in logs.py.executor": "Run",
-    "Python tests.Python tests in main.py.executor": "Run",
-    "Python.Proyect daniel.executor": "Run",
-    "Python.Sentiment_Analysis.executor": "Run",
-    "Python.__init__.executor": "Run",
-    "Python._pydev_execfile.executor": "Run",
-    "Python.airline_analysis.executor": "Run",
-    "Python.airlines_analysis.executor": "Run",
-    "Python.data_reading.executor": "Run",
-    "Python.logs.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.sentiment_analysis.executor": "Run",
-    "Python.setup.executor": "Run",
-    "Python.temporal_processing.executor": "Run",
-    "Python.tweet_analysis.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/afons/OneDrive/Imagens/Documentos/GitHub/IACD_Prog_20242025_Grupo9/project_airlines",
-    "settings.editor.selected.configurable": "consents"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests in logs.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in main.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Proyect daniel.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Sentiment_Analysis.executor&quot;: &quot;Run&quot;,
+    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
+    &quot;Python._pydev_execfile.executor&quot;: &quot;Run&quot;,
+    &quot;Python.airline_analysis.executor&quot;: &quot;Run&quot;,
+    &quot;Python.airlines_analysis.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_reading.executor&quot;: &quot;Run&quot;,
+    &quot;Python.logs.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sentiment_analysis.executor&quot;: &quot;Run&quot;,
+    &quot;Python.setup.executor&quot;: &quot;Run&quot;,
+    &quot;Python.temporal_processing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tweet_analysis.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/afons/OneDrive/Imagens/Documentos/GitHub/IACD_Prog_20242025_Grupo9/project_airlines&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;consents&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Programming\CodePython\Moodles\project_airlines\src" />
@@ -92,14 +92,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1733856416208</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Commit">
-      <option name="closed" value="true" />
-      <created>1734389167908</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1734389167908</updated>
     </task>
     <task id="LOCAL-00012" summary="Commit">
       <option name="closed" value="true" />
@@ -485,7 +477,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734475415123</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Commit">
+      <option name="closed" value="true" />
+      <created>1734514073451</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1734514073452</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
