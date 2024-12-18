@@ -64,10 +64,19 @@ def main():
         {"Descrição": "Percentagem das 10 regiões menos frequentes", "função": calculate_least_10_region,
          "args": [data]}
     ]
+    assert tweets_per_month(data, 2015, 2) == 14640
+    assert most_tweets_day (data) == "2015-02-22"
+    assert company_most_negative_tweets (data) == "United"
+    assert company_least_negative_tweets(data) == "Virgin America"
+    assert company_most_neutral_tweets(data) == "Delta"
+    assert company_least_negative_tweets(data) == "Virgin America"
+    assert company_most_positive_tweets(data) == "Southwest"
+    assert company_least_positive_tweets(data) == "Virgin America"
     for step in steps:
         print(step["Descrição"] + ":")
         print(step["função"](*step["args"]))
     return steps
+
 try:
     if __name__ == "__main__":
         main()
